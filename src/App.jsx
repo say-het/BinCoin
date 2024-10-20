@@ -1,9 +1,19 @@
-import React from 'react'
-
-const App = () => {
+import { VStack } from '@chakra-ui/react';
+import Header from './componenets/Header';
+import CameraInput from './componenets/CameraInput';
+import BinSelection from './componenets/BinSelection';
+import RewardDisplay from './componenets/RewardDisplay';
+import Footer from './componenets/Footer';
+function App() {
   return (
-    <div>App</div>
-  )
+    <VStack spacing={8} padding={8}>
+      <Header />
+      <RewardDisplay />
+      <CameraInput />
+      <BinSelection />
+      <Footer />
+    </VStack>
+  );
 }
 
-export default App
+export default App;
